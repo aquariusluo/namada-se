@@ -9,7 +9,7 @@ https://namada.stakingpower-rpc.site/
 
 #### Indexer Service: 
 <pre style="background:black;color:white"><code id="code_indexer">
-https://namada.stakingpower-indexer.site/
+https://namada.stakingpower-indexer.site/block/last
 </code></pre>
 
 #### Genesis:
