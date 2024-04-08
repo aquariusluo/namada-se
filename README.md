@@ -14,7 +14,7 @@ https://namada.stakingpower-indexer.site/block/last
 
 #### Genesis:
 <pre style="background:black;color:white"><code id="code_genesis">
-https://files.somewhere.com/genesis.json
+https://drive.google.com/file/d/1EwzxvnYuqZRIKhNopkFbou8bAL6gBtBf/view?usp=sharing
 </code></pre>
 
 #### Seed:
