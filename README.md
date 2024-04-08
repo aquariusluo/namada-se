@@ -14,17 +14,17 @@ https://namada.stakingpower-indexer.site/block/last
 
 #### Genesis:
 <pre style="background:black;color:white"><code id="code_genesis">
-https://drive.google.com/file/d/1EwzxvnYuqZRIKhNopkFbou8bAL6gBtBf/view?usp=sharing
+https://www.dropbox.com/scl/fi/hxo74zp6wm7auz7mm4vtr/genesis.json?rlkey=838dung9uo4t5xlta6us1zs1z&dl=1
 </code></pre>
 
 #### Seed:
 <pre style="background:black;color:white"><code id="code_seed">
-tcp://ip:port
+tcp://94.130.90.47:26657
 </code></pre>
 
 #### Peer:
 <pre style="background:black;color:white"><code id="code_peer">
-tcp://ip:port
+tcp://94.130.90.47:26657
 </code></pre>
 
 #### Snapshot:
