@@ -32,6 +32,11 @@ tcp://c6f279b36c2cc9bafd8fb7da97df66776f52437c@94.130.90.47:26657
 http://namada.stakingpower-rpc.site:8000/snapshot-namada-se.tar.lz4
 </code></pre>
 
+#### Addrbook:
+<pre style="background:black;color:white"><code id="code_addrbook">
+http://namada.stakingpower-rpc.site:8000/addrbook.json
+</code></pre>
+
 ## Node Setup
 #### Install Pre-requisites software
 
