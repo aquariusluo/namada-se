@@ -130,12 +130,12 @@ Description=namada
 After=network-online.target
 
 [Service]
-User=<USER>
-WorkingDirectory=/home/<USER>/.local/share/namada
+User=USER
+WorkingDirectory=/home/USER/.local/share/namada
 Environment="NAMADA_LOG=info"
 Environment="CMT_LOG_LEVEL=p2p:none,pex:error"
 Environment="NAMADA_CMT_STDOUT=true"
-ExecStart=/usr/local/bin/namada --base-dir=/home/<USER>/.local/share/namada node ledger run  
+ExecStart=/usr/local/bin/namada --base-dir=/home/USER/.local/share/namada node ledger run  
 StandardOutput=syslog
 StandardError=syslog
 Restart=on-failure
