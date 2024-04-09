@@ -19,12 +19,12 @@ http://namada.stakingpower-rpc.site:8000/genesis.json
 
 #### Seed:
 <pre style="background:black;color:white"><code id="code_seed">
-tcp://94.130.90.47:26657
+tcp://c6f279b36c2cc9bafd8fb7da97df66776f52437c@94.130.90.47:26657
 </code></pre>
 
 #### Peer:
 <pre style="background:black;color:white"><code id="code_peer">
-tcp://94.130.90.47:26657
+tcp://c6f279b36c2cc9bafd8fb7da97df66776f52437c@94.130.90.47:26657
 </code></pre>
 
 #### Snapshot:
@@ -93,7 +93,7 @@ Verify version
 cometbft version
 0.37.2
 namada --version
-Namada v0.28.2
+Namada v0.32.1
 </code></pre>
 <button style="background:#3630a3;color:white;border-radius:6px" onclick="copyToClipboard('#code6')">Copy</button>
 
@@ -130,12 +130,12 @@ Description=namada
 After=network-online.target
 
 [Service]
-User=namadanet
-WorkingDirectory=/home/namadanet/.local/share/namada
+User=<USER>
+WorkingDirectory=/home/<USER>/.local/share/namada
 Environment="NAMADA_LOG=info"
 Environment="CMT_LOG_LEVEL=p2p:none,pex:error"
 Environment="NAMADA_CMT_STDOUT=true"
-ExecStart=/usr/local/bin/namada --base-dir=/home/namadanet/.local/share/namada node ledger run  
+ExecStart=/usr/local/bin/namada --base-dir=/home/<USER>/.local/share/namada node ledger run  
 StandardOutput=syslog
 StandardError=syslog
 Restart=on-failure
@@ -151,7 +151,8 @@ WantedBy=multi-user.target
 sudo chmod 755 /etc/systemd/system/namadad.service  
 sudo systemctl daemon-reload  
 sudo systemctl enable namadad  
-sudo systemctl start namadad && sudo journalctl -u namadad -n 1000 -f
+sudo systemctl start namadad  
+sudo journalctl -u namadad -n 1000 -f
 </code></pre>
 <button style="background:#3630a3;color:white;border-radius:6px" onclick="copyToClipboard('#code11')">Copy</button>
 
