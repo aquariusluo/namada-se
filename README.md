@@ -14,7 +14,7 @@ https://namada.stakingpower-indexer.site/block/last
 
 #### Genesis:
 <pre style="background:black;color:white"><code id="code_genesis">
-https://www.dropbox.com/scl/fi/hxo74zp6wm7auz7mm4vtr/genesis.json?rlkey=838dung9uo4t5xlta6us1zs1z&dl=1
+http://namada.stakingpower-rpc.site:8000/genesis.json
 </code></pre>
 
 #### Seed:
@@ -29,7 +29,7 @@ tcp://94.130.90.47:26657
 
 #### Snapshot:
 <pre style="background:black;color:white"><code id="code_snapshot">
-https://files.somewhere.com/namada-snapshot.tar.gz
+http://namada.stakingpower-rpc.site:8000/snapshot-namada-se.tar.lz4
 </code></pre>
 
 ## Node Setup
@@ -47,7 +47,7 @@ sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
 <pre><code id="code2">
 sudo ufw allow 22  
 sudo ufw allow 26656
-sudo ufw allow 26657  (RPC)
+sudo ufw allow 26657  (for RPC)
 sudo ufw allow 26660  (for namada metic)
 sudo ufw allow 9100   (for node-exporter)
 sudo ufw enable
@@ -61,9 +61,8 @@ export PATH=$HOME/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 export BASE_DIR=$HOME/.local/share/namada  
 export NAMADA_TAG="Namada Release Tag"    
 export TM_HASH=v0.1.4-abciplus  
-export CHAIN_ID="public-testnet-15.0dacadb8d663"  
+export CHAIN_ID="shielded-expedition.88f17d1d14"  
 export PUBLIC_IP="PUBLIC IP"
-export IP_PORT="PUBLIC IP:26656"  
 export VALIDATOR_ALIAS="VALIDATOR MONIKER"  
 . "$HOME/.cargo/env"
 source ~/.bash_profile
